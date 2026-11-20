@@ -1,6 +1,6 @@
 /* Gemaakt tijdens het bouwen. Niet met de hand aanpassen. */
-const VERSIE = "rekenkampioen-8.0.0-29ac918c29";
-const BESTANDEN = ["./","apple-touch-icon.png","assets/baloo-2-latin-600-normal-tIfxVoAe.woff2","assets/baloo-2-latin-800-normal-BbF3Etk1.woff2","assets/index-DoyQ5bBl.js","assets/index-DzE-cAx9.css","assets/lexend-latin-400-normal-CwRJVcUA.woff2","assets/lexend-latin-500-normal-Dl-X5nog.woff2","assets/lexend-latin-600-normal-DdvlkEkX.woff2","icon-192.png","icon-512.png","manifest.webmanifest","privacy.html"];
+const VERSIE = "rekenkampioen-8.0.0-ac48fc196e";
+const BESTANDEN = ["./","apple-touch-icon.png","assets/baloo-2-latin-600-normal-tIfxVoAe.woff2","assets/baloo-2-latin-800-normal-BbF3Etk1.woff2","assets/index-CPljHGt3.js","assets/index-CYZ95Kys.css","assets/lexend-latin-400-normal-CwRJVcUA.woff2","assets/lexend-latin-500-normal-Dl-X5nog.woff2","assets/lexend-latin-600-normal-DdvlkEkX.woff2","icon-192.png","icon-512.png","manifest.webmanifest","privacy.html"];
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(VERSIE).then((c) => c.addAll(BESTANDEN)).then(() => self.skipWaiting()));
 });
